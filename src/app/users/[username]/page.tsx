@@ -1,4 +1,5 @@
 import CardList from "@/components/CardList";
+import { Badge } from "@/components/ui/badge";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -88,7 +89,28 @@ const SingleUserPage = () => {
                 <p className="text-sm text-muted-foreground">Profile completion</p>
                 <Progress value={66} />
               </div>
+              <div className="flex item-center gap-2">
+                <span className="font-bold">Username:</span>
+                <span>john.doe</span>
+              </div>
+              <div className="flex item-center gap-2">
+                <span className="font-bold">Email:</span>
+                <span>john.doe@gmail.com</span>
+              </div>
+              <div className="flex item-center gap-2">
+                <span className="font-bold">Phone:</span>
+                <span>+1 234 5678</span>
+              </div>
+              <div className="flex item-center gap-2">
+                <span className="font-bold">Location:</span>
+                <span>New York, NY</span>
+              </div>
+              <div className="flex item-center gap-2">
+                <span className="font-bold">Role:</span>
+                <Badge>Admin</Badge>
+              </div>
             </div>
+            <p className="text-sm text-muted-foreground mt-4">Joined on 2025.01.01</p>
           </div>
           {/* CardList Container */}
           <div className="bg-primary-foreground p-4 rounded-lg">
