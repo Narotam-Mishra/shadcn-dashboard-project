@@ -1,6 +1,5 @@
 "use client"
 
-import { Phone } from "lucide-react";
 import {
   SheetContent,
   SheetDescription,
@@ -118,7 +117,7 @@ const EditUser = () => {
               <FormField
                 control={form.control}
                 name="role"
-                render={({ field }) => (
+                render={({ }) => (
                   <FormItem>
                     <FormLabel>Role</FormLabel>
                     <FormControl>
